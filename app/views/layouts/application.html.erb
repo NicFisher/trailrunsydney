@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Trail Run Sydney</title>
-    <%= csrf_meta_tags %>
+    
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.ico' %>
@@ -11,9 +11,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:200" rel="stylesheet">
+
   </head>
 
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+    <p>
+    &copy; 2017 TrailRun Sydney
+    </p>
+  </footer>
 </html>

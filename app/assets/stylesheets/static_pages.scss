@@ -1,3 +1,48 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-page-header {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+}
+
+.main-page-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(229, 222, 217);
+  padding: 0 80px 20px 80px;
+}
+
+.main-page-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: rgb(38, 35, 37);
+}
+
+.trs-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.glyphicon {
+  color: rgb(226, 98, 0);
+}
+
+.contact-details {
+  color: rgb(38, 35, 37);
+}
+
+.contact-details:hover,
+.contact-details:focus,
+.contact-details:active,
+.contact-details:visited {
+  color: rgb(226, 98, 0);
+  text-decoration: none; 
+}
+
+
+
+
