@@ -5,6 +5,7 @@
 .main-page-header {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
+  font-size: 30px;
 }
 
 .main-page-container {
@@ -43,6 +44,15 @@
   text-decoration: none; 
 }
 
+
+@media (max-width: 480px) {
+  .main-page-header {
+    font-size: 24px;
+  }
+  .main-page-container p {
+    font-size: 15px;
+  }
+}
 
 
 
