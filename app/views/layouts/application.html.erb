@@ -3,22 +3,43 @@
   <head>
     <title>Trail Run Sydney</title>
     
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.ico' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <%= csrf_meta_tags %>
 
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:200,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   </head>
 
   <body>
+    <div class="navbar navbar-fixed-top navbar-default">
+      <div class="nav-container">
+        <a class="brand" style="margin: 0; float: none;" href="#">
+            <%= image_tag("trs-logo-white.png", :alt => "nf-logo", :class => "img-responsive trs-nav-logo") %>
+        </a>
+        <ul class="nav nav-pills pull-left">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">TRAILS</a></li>
+          <li><a href="#">CONTRIBUTE</a></li>
+        </ul>
+        <ul class="nav nav-pills pull-right">
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div> 
+
+
+
     <%= yield %>
   </body>
 
