@@ -2,7 +2,76 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/* Hero Image */
+
+
+#hero{
+  background: 
+  /* top, transparent red, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.55), 
+    rgba(0, 0, 0, 0.55)
+  ),
+  /* bottom, image */
+  image-url("blue-mountains.jpg");
+  background-size: cover;
+  position: relative;
+}
+
 .main-page-header {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-page-header h1 {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  border: 2px solid rgb(255, 255, 255);
+  display: inline;
+  padding: 25px 15px;
+}
+
+.main-page-header p {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 60px 0 40px;
+}
+
+.main-page-header p span {
+  font-weight: 400;
+}
+
+.green-link {
+  color: rgb(255, 255, 255);
+  padding: 10px 50px;
+  background-color: rgb(63, 120, 16);
+}
+
+.green-link:hover,
+.green-link:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+
+
+
+
+
+// Old Layout
+
+.main-page-header-1 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
   font-size: 30px;

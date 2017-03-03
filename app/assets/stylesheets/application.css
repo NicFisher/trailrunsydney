@@ -21,6 +21,7 @@
   border: none;
   border-radius: 0px;
   height: 90px;
+  margin-bottom: 0;
 }
 
 .trs-nav-logo {
@@ -46,7 +47,7 @@
 .brand {
     position: absolute;
     left: 50%;
-    margin-left: -50px !important;
+    margin-left: -85px !important;
     display: block;
 }
 
