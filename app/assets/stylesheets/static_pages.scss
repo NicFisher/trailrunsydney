@@ -65,64 +65,47 @@
 }
 
 
-
-
-
-
-// Old Layout
-
-.main-page-header-1 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
+.down-arrow {
+  margin-top: 150px;
 }
 
-.main-page-container {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(229, 222, 217);
-  padding: 0 80px 20px 80px;
+.down-arrow i {
+  border-radius: 100%;
+  padding: 7px;
+  background-color: rgb(193, 87, 37);
+  border: 3px solid white;
 }
 
-.main-page-container p {
+
+/* About Section */
+
+#about-container {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  color: rgb(38, 35, 37);
+}
+
+#about-container h2 {
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#about-container h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.about-row {
+  margin: 0 15%;
+}
+
+.orange-line {
+  height: 2px;
+  width: 80px;
+  background-color: rgb(193, 87, 37);
   margin-bottom: 30px;
 }
 
-.trs-logo {
-  display: block;
-  margin: 0 auto;
-  padding: 70px 0;
-}
-
-.glyphicon {
-  color: rgb(38, 35, 37);
-}
-
-.contact-details {
-  color: rgb(226, 98, 0);
-}
-
-.contact-details:hover,
-.contact-details:focus,
-.contact-details:active,
-.contact-details:visited {
-  color: rgb(38, 35, 37);
-  text-decoration: none; 
-}
-
-
-@media (max-width: 480px) {
-  .main-page-header {
-    font-size: 24px;
-  }
-  .main-page-container p {
-    font-size: 15px;
-  }
-}
 
 
 
