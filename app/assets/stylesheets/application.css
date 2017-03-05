@@ -85,12 +85,36 @@
 
 /* Footer */
 
+.footer {
+  background-color: rgb(207, 90, 0);
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.footer h4 {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  font-size: 14px;
+}
+
+.footer-row {
+  padding: 0 20% 50px 20%;
+}
+
+.footer-paragraph {
+  font-size: 12px;
+  font-weight: 300;
+}
+
 footer {
-  background-color: rgb(229, 222, 217);
-  font-size: 10px;
-  padding-left: 10px;
+  background-color: rgb(222, 215, 210);
 }
 
 footer p {
-  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
 }
