@@ -245,6 +245,12 @@ footer p {
   .footer h4 {
     font-size: 12px;
   }
+
+  i.fa.fa-instagram.social-media-insta,
+  i.fa.fa-facebook.social-media-fb {
+    font-size: 6px;
+    margin-top: 5px;
+  }
 }
 
 
