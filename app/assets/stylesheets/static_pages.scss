@@ -10,14 +10,14 @@
   background: 
   /* top, transparent red, faked with gradient */ 
   linear-gradient(
-    rgba(0, 0, 0, 0.55), 
-    rgba(0, 0, 0, 0.55)
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
   ),
   /* bottom, image */
   image-url("blue-mountains.jpg");
   background-size: cover;
   position: relative;
-  height: 700px;
+  height: 600px;
   
 }
 
@@ -131,12 +131,12 @@
   text-decoration: underline;
 }
 
-.basic-link {
+.basic-link,
+.basic-link:focus {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
-.basic-link:focus,
 .basic-link:hover {
   background-color: transparent;
   color: rgb(0, 0, 0);

@@ -27,12 +27,12 @@
         </a>
         <div class="nav-div">
           <ul class="nav nav-pills pull-left">
-            <li><a href="/static_pages/index">HOME</a></li>
-            <li><a href="/static_pages/coming_soon">TRAILS</a></li>
-            <li><a href="#">CONTRIBUTE</a></li>
+            <li><%= link_to "HOME", '/static_pages/index' %></li>
+            <li><%= link_to "TRAILS", '/static_pages/coming_soon' %></li>
+            <li><%= link_to "CONTRIBUTE", '/static_pages/coming_soon' %></li>
           </ul>
           <ul class="nav nav-pills pull-right">
-              <li><a href="#">CONTACT</a></li>
+              <li><%= link_to "CONTACT", '/static_pages/coming_soon' %></li>
               <li><a href="#" class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a></li>
               <li><a href="#" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a></li>
           </ul>
@@ -44,7 +44,7 @@
 
     <%= yield %>
     <div class="footer">
-      <h4 class="footer-header">STAY IN TOUCH</h4>
+      <h4 class="footer-header"><a href="#top" class="basic-link">BACK TO TOP</a></h4>
         <div class="row footer-row">
           <div class="col-xs-6 col-sm-4 col-md-4">
             <p class="footer-paragraph">EMAIL<br><a href="mailto:nic@trailrunsydney.com" class="footer-link">nic@trailrunsydney.com</a></p>
