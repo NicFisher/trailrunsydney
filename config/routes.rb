@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/coming_soon'
+
   get 'static_pages/index'
   root 'static_pages#index'
 
