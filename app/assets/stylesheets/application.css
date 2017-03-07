@@ -100,7 +100,8 @@
 }
 
 .footer-row {
-  padding: 0 20% 50px 20%;
+  padding: 0 0 50px 0;
+  margin: 0;
 }
 
 .footer-paragraph {
@@ -224,7 +225,7 @@ footer p {
   }
 
   .brand {
-    left: 95px;
+    left: 90px;
     top: 25px;
   }
 
@@ -248,7 +249,7 @@ footer p {
 
   i.fa.fa-instagram.social-media-insta,
   i.fa.fa-facebook.social-media-fb {
-    font-size: 6px;
+    font-size: 5px;
     margin-top: 5px;
   }
   
