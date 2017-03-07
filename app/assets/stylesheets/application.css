@@ -37,7 +37,7 @@
 }
 
 .nav-container {
-  margin: 20px 10%;
+  margin: 20px 8%;
 }
 
 .navbar {
@@ -89,6 +89,7 @@
   background-color: rgb(207, 90, 0);
   font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .footer h4 {
@@ -118,3 +119,98 @@ footer p {
   font-size: 11px;
   font-weight: 500;
 }
+
+.footer-media-links {
+  padding-left: 30px;
+  text-align: left;
+}
+
+
+
+/* Media Queries */
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+  .nav li a {
+    font-size: 12px;
+  }
+
+  .nav-container {
+    margin: 20px 20px;
+  }
+ }
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) { 
+  .nav li a {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav-container {
+    margin: 20px 50px 20px 10px;
+  }
+
+  .trs-nav-logo {
+  height: 30px;
+  width: 104px;
+  }
+
+  .social-media-insta,
+  .social-media-fb {
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 5px;
+  }
+
+  .brand {
+    left: 100px;
+  }
+
+  .nav-div {
+    float: right;
+  }
+
+  .navbar {
+    background-color: rgb(221, 100, 17);
+    border: none;
+    border-radius: 0px;
+    height: 70px;
+    margin-bottom: 0;
+  }
+  
+  .nav-container {
+    margin: 20px 10px 20px 0px;
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+
+  .trs-nav-logo {
+  height: 20px;
+  width: 70px;
+  }
+
+  .brand {
+    left: 105px;
+    top: 25px;
+  }
+
+  .nav li a {
+    font-size: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
