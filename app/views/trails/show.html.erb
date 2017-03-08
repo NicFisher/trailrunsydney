@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trail.name %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @trail.distance %>
+</p>
+
+<p>
+  <strong>Terrain:</strong>
+  <%= @trail.terrain %>
+</p>
+
+<p>
+  <strong>Elevation:</strong>
+  <%= @trail.elevation %>
+</p>
+
+<p>
+  <strong>Map image:</strong>
+  <%= @trail.map_image %>
+</p>
+
+<p>
+  <strong>Overview:</strong>
+  <%= @trail.overview %>
+</p>
+
+<p>
+  <strong>Header image:</strong>
+  <%= @trail.header_image %>
+</p>
+
+<p>
+  <strong>Image one:</strong>
+  <%= @trail.image_one %>
+</p>
+
+<p>
+  <strong>Image two:</strong>
+  <%= @trail.image_two %>
+</p>
+
+<p>
+  <strong>Image three:</strong>
+  <%= @trail.image_three %>
+</p>
+
+<p>
+  <strong>Handy hint:</strong>
+  <%= @trail.handy_hint %>
+</p>
+
+<%= link_to 'Edit', edit_trail_path(@trail) %> |
+<%= link_to 'Back', trails_path %>

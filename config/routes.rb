@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trails
   get 'static_pages/coming_soon'
 
   get 'static_pages/index'

@@ -1,0 +1,72 @@
+<%= form_for(trail) do |f| %>
+  <% if trail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trail.errors.count, "error") %> prohibited this trail from being saved:</h2>
+
+      <ul>
+      <% trail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :distance %>
+    <%= f.text_field :distance %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain %>
+    <%= f.text_field :terrain %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation %>
+    <%= f.number_field :elevation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :map_image %>
+    <%= f.text_field :map_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :overview %>
+    <%= f.text_area :overview %>
+  </div>
+
+  <div class="field">
+    <%= f.label :header_image %>
+    <%= f.text_field :header_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_one %>
+    <%= f.text_field :image_one %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_two %>
+    <%= f.text_field :image_two %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image_three %>
+    <%= f.text_field :image_three %>
+  </div>
+
+  <div class="field">
+    <%= f.label :handy_hint %>
+    <%= f.text_area :handy_hint %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

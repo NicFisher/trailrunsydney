@@ -1,0 +1,68 @@
+// Place all the styles related to the trails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.trail-header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(222, 215, 210);
+  height: 80px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.trail-header h3 {
+  margin: 0;
+  font-size: 20px;
+  padding: 29px 0;
+}
+
+.small-trail-img {
+  padding-right: 10%;
+}
+
+.trail-column {
+  padding: 0;
+}
+
+.trail-row {
+  padding: 0 10%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.55);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.overlay h4 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.trail-icon {
+  width: 25px;
+  height: 20px;
+}
+
+.small-orange-line {
+  height: 2px;
+  width: 60px;
+  background-color: rgb(193, 87, 37);
+  margin: 0 auto 10px auto;
+}
+
+
+
+

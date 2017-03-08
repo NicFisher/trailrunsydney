@@ -1,0 +1,53 @@
+
+
+<div class="trail-header">
+  <h3>LET'S HIT THE TRAILS</h3>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<div class="row trail-row">
+  <% @trails.each do |trail| %>
+    <div class="col-xs-12 col-sm-4 col-md-4 trail-column">
+      <div class="img-overlay">
+        <%= image_tag(trail.header_image, class: "img-responsive small-trail-img") %>
+        <div class="overlay">
+          <%= image_tag("wave_icon.png", class: "trail-icon") %>
+          <h4><%= trail.name %></h4>
+          <div class="small-orange-line">
+          </div>
+          <p><%= trail.distance %> | EASY</p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+<!-- <table>
+  <tbody>
+    <% @trails.each do |trail| %>
+      <tr>
+        <td><%= trail.name %></td>
+        <td><%= trail.distance %></td>
+        <td><%= trail.terrain %></td>
+        <td><%= trail.elevation %></td>
+        <td><%= trail.map_image %></td>
+        <td><%= trail.overview %></td>
+        <td><%= trail.header_image %></td>
+        <td><%= trail.image_one %></td>
+        <td><%= trail.image_two %></td>
+        <td><%= trail.image_three %></td>
+        <td><%= trail.handy_hint %></td>
+        <td><%= link_to 'Show', trail %></td>
+        <td><%= link_to 'Edit', edit_trail_path(trail) %></td>
+        <td><%= link_to 'Destroy', trail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+
+<br>
+
+<%= link_to 'New Trail', new_trail_path %>

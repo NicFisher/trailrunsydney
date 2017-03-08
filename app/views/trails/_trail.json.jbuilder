@@ -1,0 +1,2 @@
+json.extract! trail, :id, :name, :distance, :terrain, :elevation, :map_image, :overview, :header_image, :image_one, :image_two, :image_three, :handy_hint, :created_at, :updated_at
+json.url trail_url(trail, format: :json)
