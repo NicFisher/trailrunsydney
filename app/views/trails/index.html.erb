@@ -9,16 +9,18 @@
 <div class="row trail-row">
   <% @trails.each do |trail| %>
     <div class="col-xs-12 col-sm-4 col-md-4 trail-column">
-      <div class="img-overlay">
-        <%= image_tag(trail.header_image, class: "img-responsive small-trail-img") %>
-        <div class="overlay">
-          <%= image_tag("wave_icon.png", class: "trail-icon") %>
-          <h4><%= trail.name %></h4>
-          <div class="small-orange-line">
+      <%= link_to trail do %>
+        <div class="img-overlay">
+          <%= image_tag(trail.header_image, class: "img-responsive small-trail-img") %>
+          <div class="overlay">
+            <%= image_tag("wave_icon.png", class: "trail-icon") %>
+            <h4><%= trail.name %></h4>
+            <div class="small-orange-line">
+            </div>
+            <p><%= trail.distance %> | EASY</p>
           </div>
-          <p><%= trail.distance %> | EASY</p>
         </div>
-      </div>
+      <% end %>
     </div>
   <% end %>
 </div>

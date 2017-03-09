@@ -9,7 +9,7 @@
   background-color: rgb(222, 215, 210);
   height: 80px;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .trail-header h3 {
@@ -24,6 +24,7 @@
 
 .trail-column {
   padding: 0;
+  margin-top: 5%;
 }
 
 .trail-row {
@@ -38,12 +39,17 @@
   background-color: rgba(0, 0, 0,0.55);
   color: rgb(255, 255, 255);
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20%;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0,0.85);
 }
 
 .overlay h4 {
   text-transform: uppercase;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .overlay p {
@@ -64,5 +70,77 @@
 }
 
 
+/* Mobile Compatibility */
+
+@media (min-width: 768px) and (max-width: 979px) {
+  
+  .overlay h4 {
+    font-size: 14px;
+  }
+  
+  .overlay p {
+  font-size: 9px;
+  }
+
+  .trail-icon {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+  @media (max-width: 767px) { 
+  
+  .overlay h4 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+  font-size: 14px;
+  }
+
+  .trail-icon {
+    width: 25px;
+    height: 20px;
+  }
+
+  .small-orange-line {
+    height: 3px;
+  }
+
+  .overlay {
+    width: 100%;
+  }
+
+  .small-trail-img {
+    padding-right: 0;
+  }
+
+  .trail-row {
+    padding: 0 20% 50px 20%;
+  }
+
+  .trail-column {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .trail-header h3 {
+    font-size: 15px;
+  }
+
+  .overlay h4 {
+    font-size: 15px;
+  }
+  
+  .overlay p {
+  font-size: 11px;
+  }
+
+  .small-orange-line {
+    height: 2px;
+  }
+}
 
 
