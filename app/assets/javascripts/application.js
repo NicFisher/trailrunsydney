@@ -16,8 +16,9 @@
 //= require_tree .
 
 jQuery(document).ready(function($){
+  // Smooth Scrolling
   var $root = $('html, body');
-  $('.footer h4 a').click(function() {
+  $('a').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
       scrollTop: $(href).offset().top
@@ -26,5 +27,4 @@ jQuery(document).ready(function($){
       });
      return false;
   });
-
 });
