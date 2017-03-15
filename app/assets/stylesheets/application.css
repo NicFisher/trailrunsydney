@@ -18,42 +18,46 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 /* Navigation */
 
 .navbar {
   background-color: rgb(221, 100, 17);
   border: none;
   border-radius: 0px;
-  height: 90px;
+  height: 80px;
   margin-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .trs-nav-logo {
-  height: 50px;
-  width: 174px;
+  width: 255px;
+  height: 70px;
+  margin: 5px 0;
 }
 
 .nav li a {
   font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
-.nav-container {
-  margin: 20px 8%;
+.navbar-default .navbar-nav>li>a {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-nav {
+  margin: 15px 0;
 }
 
 .navbar {
-    position: relative;
-}
-
-.brand {
-    position: absolute;
-    left: 50%;
-    margin-left: -85px !important;
-    display: block;
+  position: relative;
 }
 
 .nav>li>.social-media-links {
@@ -66,7 +70,7 @@
   border: 2px solid rgb(255, 255, 255);
   border-radius: 100%;
   color: rgb(255, 255, 255);
-  margin-left: 20px;
+  margin: 5px 0 0 20px;
   font-size: 11px;
 }
 
@@ -75,10 +79,8 @@
   margin-left: 5px;
 }
 
-
 .nav>li>a:focus, 
 .nav>li>a:hover {
-  background-color: transparent;
   color: rgb(0, 0, 0);
 }
 
@@ -92,7 +94,6 @@
 
 .footer {
   background-color: rgb(207, 90, 0);
-  font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -128,8 +129,8 @@ footer p {
 }
 
 .footer-media-links {
-  padding-left: 30px;
-  text-align: left;
+  padding: 0;
+  text-align: center;
 }
 
 .footer-link {
@@ -151,11 +152,7 @@ footer p {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
   .nav li a {
-    font-size: 12px;
-  }
-
-  .nav-container {
-    margin: 20px 20px;
+    font-size: 14px;
   }
  }
 
@@ -165,35 +162,6 @@ footer p {
   
   /* Navigation */
 
-  .nav li a {
-    font-size: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .nav-container {
-    margin: 20px 50px 20px 10px;
-  }
-
-  .trs-nav-logo {
-  height: 30px;
-  width: 104px;
-  }
-
-  .social-media-insta,
-  .social-media-fb {
-    border: 1px solid rgb(255, 255, 255);
-    margin-left: 5px;
-  }
-
-  .brand {
-    left: 100px;
-  }
-
-  .nav-div {
-    float: right;
-  }
-
   .navbar {
     background-color: rgb(221, 100, 17);
     border: none;
@@ -202,21 +170,58 @@ footer p {
     margin-bottom: 0;
   }
 
-  .nav-container {
-    margin: 20px 10px 20px 0px;
+  .trs-nav-logo {
+    width: 218px;
+    height: 60px;
+    margin: 5px 0 5px 15px;
   }
 
-  .footer-media-links {
-    text-align: center;
-    margin-top: 10px;
+  .nav li a {
+    font-size: 14px;
   }
 
-  .footer-paragraph {
-    font-size: 11px;
+  .pull-right {
+    float: none!important;
   }
 
-  footer p {
-  font-size: 9px;
+  .nav>li>a.social-media-links {
+    display: inline;
+  }
+
+  .nav>li {
+    display: inline;
+  }
+
+  .navbar-collapse {
+    background-color: rgb(221, 100, 17);
+  }
+
+  .social-media-insta {
+    margin-left: 15px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border: 2px solid rgb(255, 255, 255);
+    margin: 17px 15px 17px 0;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+  }
+
+  .navbar-default .navbar-toggle:hover .icon-bar,
+  .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .footer-media-links>a.social-media-links>i.social-media-insta {
+    margin-left: 0;
   }
 }
 
@@ -225,8 +230,9 @@ footer p {
 @media (max-width: 480px) {
 
   .trs-nav-logo {
-  height: 17px;
-  width: 60px;
+    width: 182px;
+    height: 50px;
+    margin: 10px 0 10px 15px;
   }
 
   .brand {
@@ -235,7 +241,7 @@ footer p {
   }
 
   .nav li a {
-    font-size: 8px;
+    font-size: 10px;
     padding-left: 4px;
     padding-right: 4px;
   }
@@ -252,12 +258,7 @@ footer p {
     font-size: 12px;
   }
 
-  i.fa.fa-instagram.social-media-insta,
-  i.fa.fa-facebook.social-media-fb {
-    font-size: 5px;
-    margin-top: 5px;
-  }
-  
+   
   i.fa.fa-instagram.social-media-insta {
     padding: 5px 6px;
   }

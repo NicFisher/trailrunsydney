@@ -20,41 +20,46 @@
   </head>
 
   <body>
-    <div id="top" class="navbar navbar-fixed-top navbar-default">
-      <div class="nav-container">
-        <a class="brand" href="#">
-            <%= image_tag("trs-logo-white.png", :alt => "nf-logo", :class => "img-responsive trs-nav-logo") %>
-        </a>
-        <div class="nav-div">
-          <ul class="nav nav-pills pull-left">
-            <li><%= link_to "HOME", '/static_pages/index' %></li>
-            <li><%= link_to "TRAILS", trails_path %></li>
-            <li><%= link_to "CONTRIBUTE", '/static_pages/coming_soon' %></li>
-          </ul>
-          <ul class="nav nav-pills pull-right">
-              <li><%= link_to "CONTACT", '/static_pages/coming_soon' %></li>
-              <li><a href="#" class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/static_pages/index"><%= image_tag("TRS_Logo-05.png", :alt => "trs-logo", :class => "img-responsive trs-nav-logo") %></a>
+    </div>
 
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+        <li><%= link_to "HOME", '/static_pages/index' %></li>
+        <li><%= link_to "TRAILS", trails_path %></li>
+        <li><%= link_to "CONTRIBUTE", '/static_pages/coming_soon' %></li>
+        <li><%= link_to "CONTACT", '/static_pages/coming_soon' %></li>
+        <li><a href="https://www.instagram.com/trailrunsydney/" target="_blank" class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     <%= yield %>
     <div class="footer">
       <h4 class="footer-header"><a href="#top" class="basic-link">BACK TO TOP</a></h4>
         <div class="row footer-row">
           <div class="col-xs-6 col-sm-4 col-md-4">
-            <p class="footer-paragraph">EMAIL<br><a href="mailto:nic@trailrunsydney.com" class="footer-link">nic@trailrunsydney.com</a></p>
+            <p class="footer-paragraph">EMAIL<br><a href="mailto:hello@trailrunsydney.com" class="footer-link">hello@trailrunsydney.com</a></p>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-4">
-            <p class="footer-paragraph">JOIN THE TRS CLUB<br><span class="italic"><a href="#" class="footer-link">#trailrunsydney</a></span></p>
+            <p class="footer-paragraph">JOIN THE TRS CLUB<br><span class="italic"><a href="https://www.instagram.com/explore/tags/trailrunsydney/" target="_blank" class="footer-link">#trailrunsydney</a></span></p>
           </div>
           <div class="footer-media-links col-xs-12 col-sm-4 col-md-4">
-            <a href="#" class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a>
-            <a href="#" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/trailrunsydney/"  class="social-media-links"><i class="fa fa-instagram social-media-insta" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/trailrunsydney/" target="_blank" class="social-media-links"><i class="fa fa-facebook social-media-fb" aria-hidden="true"></i></a>
           </div>
         </div>
         <footer>

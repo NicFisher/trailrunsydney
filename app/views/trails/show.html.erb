@@ -1,59 +1,46 @@
-<p id="notice"><%= notice %></p>
+<div class="show-header-image">
+  <%= image_tag(@trail.header_image, class: "img-responsive large-header-img") %>
+    <h3><%= @trail.name %></h3>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trail.name %>
-</p>
 
-<p>
-  <strong>Distance:</strong>
-  <%= @trail.distance %>
-</p>
+<div class="trail-info-container container">
+  <h4>OVERVIEW</h4>
+  <div class="small-orange-line">
+  </div>
+  <p class="overview"><%= @trail.overview %></p>
+  <div class="the-basics">
+    <div class="the-basics-header">
+      <h4>THE BASICS</h4>
+    </div>
+    <div class="basic-info">
+    <p>
+      <strong>DIFFICULTY LEVEL:</strong>
+      EASY
+    </p>
+    <p>
+      <strong>DISTANCE:</strong>
+      <%= @trail.distance %>
+    </p>
+    <p>
+      <strong>TERRAIN:</strong>
+      <%= @trail.terrain %>
+    </p>
+    <p>
+      <strong>ELEVATION:</strong>
+      <%= @trail.elevation %> METRES
+    </p>
+    <p>
+    <strong>HANDY HINT:</strong>
+      <%= @trail.handy_hint %>
+    </p>
+    </div>
+  </div>
 
-<p>
-  <strong>Terrain:</strong>
-  <%= @trail.terrain %>
-</p>
+  <iframe src="https://www.doogal.co.uk/StravaRoute.php?id=7908156&embed=true&segments=false&title=false&streetView=false"
+ width="600" height="850" frameborder="0"></iframe>
+</div>
 
-<p>
-  <strong>Elevation:</strong>
-  <%= @trail.elevation %>
-</p>
-
-<p>
-  <strong>Map image:</strong>
-  <%= @trail.map_image %>
-</p>
-
-<p>
-  <strong>Overview:</strong>
-  <%= @trail.overview %>
-</p>
-
-<p>
-  <strong>Header image:</strong>
-  <%= @trail.header_image %>
-</p>
-
-<p>
-  <strong>Image one:</strong>
-  <%= @trail.image_one %>
-</p>
-
-<p>
-  <strong>Image two:</strong>
-  <%= @trail.image_two %>
-</p>
-
-<p>
-  <strong>Image three:</strong>
-  <%= @trail.image_three %>
-</p>
-
-<p>
-  <strong>Handy hint:</strong>
-  <%= @trail.handy_hint %>
-</p>
-
-<%= link_to 'Edit', edit_trail_path(@trail) %> |
-<%= link_to 'Back', trails_path %>
+<div class="back-to-trails">
+  <%= link_to 'Back To Trails', trails_path, class:'green-link' %>
+</div>
