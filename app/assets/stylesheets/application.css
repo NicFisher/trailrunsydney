@@ -180,10 +180,6 @@ footer p {
     font-size: 14px;
   }
 
-  .pull-right {
-    float: none!important;
-  }
-
   .nav>li>a.social-media-links {
     display: inline;
   }
