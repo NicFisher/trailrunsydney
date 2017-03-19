@@ -148,6 +148,49 @@
   color: rgb(255, 255, 255);
 }
 
+/* Contact */
+
+.contact-container {
+  height: 500px;
+}
+
+.contact-form {
+  padding: 0 10%;
+}
+
+.btn-primary {
+  background-color: rgb(63, 120, 16);
+  color: rgb(255, 255, 255);
+  margin: 40px 36% 0 36%;
+  width: 28%;
+  border-radius: 0;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+  color: rgb(0, 0, 0);
+  background-color: rgb(63, 120, 16);
+  border-color: rgb(63, 120, 16);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+/* Thankyou */
+
+.thankyou-container {
+  text-align: center;
+  height: 400px;
+}
+
+.thankyou-container p {
+  margin: 50px 0;
+}
 
 /* Mobile Compatibility */
 
@@ -185,6 +228,14 @@
 
   .profile-img {
     padding-left: 20%;
+  }
+
+  label, .form-control {
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    font-size: 12px;
   }
 }
 

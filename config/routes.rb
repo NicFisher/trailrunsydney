@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'static_pages/thankyou'
+
+  get 'static_pages/contribute'
+
+  get 'static_pages/contact'
+
+  post 'static_pages/thank_you'
+
   resources :trails
   get 'static_pages/coming_soon'
 
