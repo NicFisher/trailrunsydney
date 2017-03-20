@@ -1,0 +1,17 @@
+<table style="width: 100%;">
+  <tbody>
+    <tr style="color: rgb(221, 100, 17); font-family: sans-serif; text-align: center; font-size: 13px;">
+      <h1 style="color: rgb(221, 100, 17); text-align: center; font-size: 50px; font-family: sans-serif;">TRAIL RUN SYDNEY</h1>
+      <td><p>You have received a new trail from <%= @name %>. The contents of the message are:</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-family: sans-serif; text-align: center;"><%= @message %></p></td>
+    </tr>
+    <tr>
+      <td><p style="font-family: sans-serif; text-align: center;"><%= @strava_route %></p></td>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); font-family: sans-serif; text-align: center; font-size: 13px;">
+      <td><p style="text-align: center; font-family: sans-serif;">Please reply to: <%= @email %></p></td>
+    </tr>
+  </tbody>
+</table>
