@@ -14,7 +14,7 @@ class StaticPagesController < ApplicationController
     @email = params[:email]
     @message = params[:message]
     @strava_route = params[:strava_route]
-    UserMailer.contribute_form(@email, @name, @message).deliver_now
+    UserMailer.contribute_form(@email, @name, @message, @strava_route).deliver_now
   end
 
 
