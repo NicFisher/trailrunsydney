@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
     ActionMailer::Base.mail(:from => @email,
         :to => 'hello@trailrunsydney.com',
         :subject => "A new contact form message from #{@name}",
-        :body => @message, @strava_route).deliver_now
+        :body => @message).deliver_now
   end
 
 end
