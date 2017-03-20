@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
+  post 'static_pages/contribute_thank_you'
+
   resources :trails
   get 'static_pages/coming_soon'
 
