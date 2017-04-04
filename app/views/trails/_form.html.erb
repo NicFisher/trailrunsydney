@@ -11,72 +11,75 @@
     </div>
   <% end %>
 
+  
   <div class="field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :route_id %>
-    <%= f.number_field :route_id %>
+    <%= f.number_field :route_id, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :difficulty_level %>
-    <%= f.text_field :difficulty_level %>
+    <%= f.text_field :difficulty_level, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :distance %>
-    <%= f.text_field :distance %>
+    <%= f.text_field :distance, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :terrain %>
-    <%= f.text_field :terrain %>
+    <%= f.text_field :terrain, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :elevation %>
-    <%= f.number_field :elevation %>
+    <%= f.number_field :elevation, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :map_image %>
-    <%= f.text_field :map_image %>
+    <%= f.text_field :map_image, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :overview %>
-    <%= f.text_area :overview %>
+    <%= f.text_area :overview, size: '10x6', class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :header_image %>
-    <%= f.text_field :header_image %>
+    <%= f.text_field :header_image, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :image_one %>
-    <%= f.text_field :image_one %>
+    <%= f.text_field :image_one, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :image_two %>
-    <%= f.text_field :image_two %>
+    <%= f.text_field :image_two, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :image_three %>
-    <%= f.text_field :image_three %>
+    <%= f.text_field :image_three, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :handy_hint %>
-    <%= f.text_area :handy_hint %>
+    <%= f.text_area :handy_hint, size: '10x6', class: "form-control" %>
   </div>
 
-  <div class="actions">
+  <button class="actions green-link">
     <%= f.submit %>
-  </div>
+  </button>
+
+
 <% end %>
