@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+
 jQuery(document).ready(function($){
   // Smooth Scrolling
   var $root = $('html, body');
@@ -27,4 +29,14 @@ jQuery(document).ready(function($){
       });
      return false;
   });
+    var feed = new Instafeed ({
+      get: 'user',
+      userId: 4827738492,
+      clientId: 'e3523ccceff442d58ea9f48bb2850b34',
+      accessToken: '4827738492.1677ed0.3738b322df9f4f4c93b22601d6dcc55b',
+      resolution: 'standard_resolution',
+      limit: '5',
+      template: '<a href="https://www.instagram.com/trailrunsydney/"target="_blank"><img src="{{image}}"style="margin: 0; width: 172px; height: 172x;"/></a>'           
+  });    
+  feed.run();
 });
