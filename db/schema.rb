@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170405054456) do
+ActiveRecord::Schema.define(version: 20170406071914) do
 
   create_table "trails", force: :cascade do |t|
     t.string   "name"
     t.string   "distance"
     t.string   "terrain"
     t.integer  "elevation"
-    t.string   "map_image"
     t.text     "overview"
     t.string   "header_image"
     t.string   "image_one"
