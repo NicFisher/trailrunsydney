@@ -35,8 +35,8 @@ jQuery(document).ready(function($){
       clientId: 'e3523ccceff442d58ea9f48bb2850b34',
       accessToken: '4827738492.1677ed0.3738b322df9f4f4c93b22601d6dcc55b',
       resolution: 'standard_resolution',
-      limit: '5',
-      template: '<a href="https://www.instagram.com/trailrunsydney/"target="_blank"><img src="{{image}}"style="margin: 0; width: 172px; height: 172x;"/></a>'           
+      limit: '6',
+      template: '<a href="https://www.instagram.com/trailrunsydney/"target="_blank"><img src="{{image}}"style="margin: 0; width: 130px; height: 130x;"/></a>'           
   });    
   feed.run();
 });
